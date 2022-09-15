@@ -35,9 +35,9 @@ const CardContainer = (cardItem) => {
     });
   };
 
-  const handlePage = (index) => {
-    setPage(index);
-  };
+  // const handlePage = (index) => {
+  //   setPage(index);
+  // };
 
   return (
     <div className="card-container">
