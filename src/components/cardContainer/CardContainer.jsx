@@ -9,7 +9,6 @@ const CardContainer = (cardItem) => {
   const [page, setPage] = useState(1);
   const [cards, setCards] = useState([]);
   const { loading, value } = useFetch(page);
- console.log(page, 'pages');
 
   useEffect(() => {
     if (loading) return;
@@ -29,7 +28,7 @@ const CardContainer = (cardItem) => {
     setPage((oldPage) => {
       let prevPage = oldPage - 1;
       if (prevPage < 0) {
-        prevPage =  1;
+        prevPage = 1;
       }
       return prevPage;
     });
@@ -46,35 +45,17 @@ const CardContainer = (cardItem) => {
 
       <div className="card-wrapper">
         {cards.map((item, index) => {
-          return (
-            <CardItem
-              key={item.isbn}
-              index={index}
-              {...item}
-           
-            />
-          );
+          return <CardItem key={item.isbn} index={index} {...item} />;
         })}
       </div>
       {!loading && (
         <div className="btn-container">
           <button className="prev-btn" onClick={prevPage}>
-            <img src="/Vector.png" alt="vector" />
+            prev
           </button>
-          {/* {value.map((item, index) => {
-            return (
-              <button
-                key={index}
-                className={`page-btn ${index === page ? "active-btn" : null}`}
-                onClick={() => handlePage(index)}
-              >
-                {index + 1}
-              </button>
-            );
-          })} */}
-          
+
           <button className="next-btn" onClick={nextPage}>
-            <img src="/Vector-right.png" alt="vector" />
+            next
           </button>
         </div>
       )}
@@ -83,7 +64,3 @@ const CardContainer = (cardItem) => {
 };
 
 export default CardContainer;
-
-
-
-

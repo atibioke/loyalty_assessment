@@ -11,14 +11,14 @@ console.log(index, " index");
 
 
   useEffect(() => {
-    const getProducts = async (url) => {
+    const getBooks = async (url) => {
 
       const response = await fetch(`${url}?page=${index}`);
       const data = await response.json();
       setValue(data);
       setLoading(false);
     };
-    getProducts(url);
+    getBooks(url);
   }, [index]);
   return { loading, value };
 };

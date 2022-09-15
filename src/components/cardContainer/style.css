@@ -36,14 +36,19 @@
 }
 
 .prev-btn{
-  border: none;
-  background-color:#fff;
+ padding: 0.5rem;
+  color:#fff;
+  background-color: blue;
+  border-radius: 5px;
 }
 
 .next-btn{
-  border: none;
-  background-color:#fff;
+  border-radius: 5px;
+  padding: 0.5rem;
+  color:#fff;
+  background-color: blue;
 }
+
 
 .page-btn{
   outline: none;
