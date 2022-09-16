@@ -38,15 +38,41 @@ const BookDetails = () => {
               <img className="book-image" src="/book-covers.jpg" alt="book" />
             </div>
 
-            <div className="detail-container">
-              <p>Name: {bookDetails.name}</p>
-              <p>Authors: {bookDetails.authors}</p>
-              <p>Publisher: {bookDetails.publisher}</p>
-              <p>Country: {bookDetails.country}</p>
-              <p>Num Of Pages: {bookDetails.numberOfPages}</p>
-              <p>isbn: {bookDetails.isbn}</p>
-              <p>Characters: {bookDetails.characters.length}</p>
-              <p>Media Type: {bookDetails.mediaType}</p>
+            <div className="details-container">
+              <p>
+                {" "}
+                <span>Name: </span>
+                {bookDetails.name}
+              </p>
+              <p>
+                {" "}
+                <span>Authors: </span> {bookDetails.authors}
+              </p>
+              <p>
+                <span>Publisher: </span> {bookDetails.publisher}
+              </p>
+              <p>
+                <span>Country: </span> {bookDetails.country}
+              </p>
+              <p>
+                <span>Num Of Pages: </span> {bookDetails.numberOfPages}
+              </p>
+              <p>
+                <span> isbn: </span> {bookDetails.isbn}
+              </p>
+              <p>
+                <span>Characters: </span> {bookDetails.characters.length}
+              </p>
+              <p>
+                <span>Year: </span>
+                {new Date(bookDetails.released).getDate()}/
+                {new Date(bookDetails.released).getMonth() + 1}/
+                {new Date(bookDetails.released).getFullYear()}
+              </p>
+              <p>
+                <span> Media Type: </span> {bookDetails.mediaType}
+              </p>
+            
 
               <div className="add-to-cart">
                 <button className="l-btn" onClick={() => dispatch(decrease())}>

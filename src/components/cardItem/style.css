@@ -8,6 +8,7 @@
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(165, 165, 165, 0.15);
   border-radius: 5px;
+  cursor: pointer;
 }
 .card-title {
   font-weight: 400;
@@ -17,6 +18,7 @@
   font-family: "Roboto";
   font-size: 18px;
   padding-left: 24px;
+  text-align: center;
 }
 .card-details-container{
     height: 100%;
@@ -24,6 +26,19 @@
     flex-direction: column;
     justify-content:space-between;
  
+}
+
+.book-img-cover{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.card-image{
+padding: 1.5rem 0 0 0;
+  width: 70%;
+  height: 100%;
+
 }
 
 .card-details {
@@ -55,15 +70,15 @@
   font-weight: 500;
 }
 
-.bookmark{
+/* .bookmark{
   cursor: pointer;
-}
+} */
 
 
-.bookmark-img {
+/* .bookmark-img {
   filter: opacity(0.4) drop-shadow(0 0 0 red);
  
-}
+} */
 .card-items{
     width: 100%;
     display: flex;

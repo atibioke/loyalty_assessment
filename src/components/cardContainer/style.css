@@ -12,6 +12,7 @@
   padding-top: 2.16rem;
   justify-content: space-between;
   width: 100%;
+  
 }
 .main-header {
   padding-top: 2.16rem;
@@ -40,6 +41,7 @@
   color:#fff;
   background-color: blue;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .next-btn{
@@ -47,6 +49,7 @@
   padding: 0.5rem;
   color:#fff;
   background-color: blue;
+  cursor: pointer;
 }
 
 
@@ -57,7 +60,7 @@
 }
 
 
-.page-btn:focus{
-background-color:   #03009e;
+.prev-btn, .next-btn:focus{
+background-color:   #761489;
 color: #fff;
 }
