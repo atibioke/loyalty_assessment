@@ -34,7 +34,7 @@
 }
 
 .r-btn{
-    background-color: rgb(255, 153, 0);
+   background: #7e7cf4;
     color: #ffffff;
     padding: 1rem;
     font-size: 1rem;
@@ -44,7 +44,7 @@
 }
 
 .l-btn{
-    background-color: rgb(255, 153, 0);
+   background: #7e7cf4;
     color: #ffffff;
     padding: 1rem;
     font-size: 1.5rem;
