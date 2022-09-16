@@ -12,7 +12,6 @@
   padding-top: 2.16rem;
   justify-content: space-between;
   width: 100%;
-  
 }
 .main-header {
   padding-top: 2.16rem;
@@ -26,41 +25,39 @@
   font-style: normal;
 }
 
-.btn-container{
+.btn-container {
   margin-top: 50px;
   display: flex;
   justify-content: flex-end;
   width: 100%;
   gap: 3px;
   cursor: pointer;
- 
 }
 
-.prev-btn{
- padding: 0.5rem;
-  color:#fff;
+.prev-btn {
+  padding: 0.5rem;
+  color: #fff;
   background-color: blue;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.next-btn{
+.next-btn {
   border-radius: 5px;
   padding: 0.5rem;
-  color:#fff;
+  color: #fff;
   background-color: blue;
   cursor: pointer;
 }
 
-
-.page-btn{
+.page-btn {
   outline: none;
   border: none;
-  border-radius: 2px
+  border-radius: 2px;
 }
 
-
-.prev-btn, .next-btn:focus{
-background-color:   #761489;
-color: #fff;
+.prev-btn,
+.next-btn:focus {
+  background-color: #761489;
+  color: #fff;
 }

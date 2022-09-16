@@ -15,8 +15,7 @@
   }
 
 .icon{
- 
-  width: 4rem;
+  width: 3rem;
   height: 5rem;
 padding-right: 4rem;
 
@@ -24,12 +23,11 @@ padding-right: 4rem;
 
 .amount-container {
   position: absolute;
-  top: -0.4rem;
+  top: -0.1rem;
   right: 3rem;
   width: 1.75rem;
   height: 1.75rem;
   border-radius: 50%;
-  background: var(--clr-primary-light);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,6 +61,22 @@ h3 {
     height: 28px;
     left: 30px;
   }
+  .icon{
+    width: 3rem;
+    height: 5rem;
+  padding-right: 2rem;
+ }
+ .amount-container {
+  position: absolute;
+  top: -0.1rem;
+  right: 1.2rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 }
 
 @media (min-width: 1973px) {
@@ -72,4 +86,5 @@ h3 {
     height: 28px;
     left: 225px;
   }
+  
 }
