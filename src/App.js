@@ -1,6 +1,6 @@
 import React from "react";
 import CardContainer from "./components/cardContainer/CardContainer";
-import Navbar from "./components/Navabar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
