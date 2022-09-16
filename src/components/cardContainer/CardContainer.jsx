@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./style.css";
 import CardItem from "../cardItem/CardItem";
 
-import { useFetch } from "../../useFecth";
+import { useFetch } from "../../useFetch";
 // import paginate from "../../utils";
 
 const CardContainer = (cardItem) => {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Navbar from "../Navabar/Navbar";
+import Navbar from "../Navbar/Navbar";
 import "./style.css";
 import { increase, decrease } from "../../features/counterSlice";
 import { useDispatch } from "react-redux";
