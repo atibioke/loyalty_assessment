@@ -76,7 +76,7 @@ const BookDetails = () => {
 
               <div className="add-to-cart">
                 <button className="l-btn" onClick={() => dispatch(decrease())}>
-                  -
+                 -
                 </button>
                 <p>add to cart</p>
                 <button className="r-btn" onClick={() => dispatch(increase())}>

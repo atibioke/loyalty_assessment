@@ -8,7 +8,6 @@
   background-size: contain, cover;
   background-position: center;
   overflow-x: hidden;
- 
 }
 
 .details-container {
@@ -24,73 +23,81 @@
   border-radius: 5px;
 }
 
-.details-container> p{
+.details-container > p {
   text-align: left;
 }
 
-.details-container> p>span{
+.details-container > p > span {
   font-size: 1rem;
   font-weight: 600;
 }
 
-.r-btn{
-   background: #7e7cf4;
-    color: #ffffff;
-    padding: 1rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    margin-left: 0.8rem;
-    cursor: pointer;
+.r-btn {
+  background: #7e7cf4;
+  color: #ffffff;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-left: 0.8rem;
+  cursor: pointer;
+  border: none;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.l-btn{
-   background: #7e7cf4;
-    color: #ffffff;
-    padding: 1rem;
-    font-size: 1.5rem;
-    border-radius: 5px;
-    margin-right: 0.8rem;
-    cursor: pointer;
+.l-btn {
+  background: #7e7cf4;
+  color: #ffffff;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  margin-right: 0.8rem;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  height: 3rem;
 }
 
-.add-to-cart{
-    display: flex;
-    border-top: 2px solid rgb(71, 66, 66);
-    width: 100%;
-    justify-content: center;
+.add-to-cart {
+  display: flex;
+  border-top: 2px solid rgb(71, 66, 66);
+  width: 100%;
+  justify-content: center;
+  padding-top: 1.5rem;
 }
 
-.book-details-container{
+.book-details-container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.book-image {
+  width: 25rem;
+  padding: 2rem;
+}
+
+@media (max-width: 500px) {
+  .book-details-container {
     width: 100vw;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  .book-image {
+    width: 20rem;
+    padding: 2rem;
+  }
 }
 
-.book-image{
-    width: 25rem;
-  padding: 2rem
+@media (max-width: 765px) {
+  .book-details-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
-@media(max-width: 500px){
-    .book-details-container{
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .book-image{
-      width: 20rem;
-    padding: 2rem
-  }
-  }
-
-  @media(max-width: 765px){
-    .book-details-container{
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-  }
-
-
