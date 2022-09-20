@@ -1,6 +1,6 @@
 .navContainer {
   color: white;
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 75px;
   left: 0px;
